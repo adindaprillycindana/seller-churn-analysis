@@ -204,9 +204,9 @@ with tab_form:
         try:
             # probabilitas churn
             if hasattr(model, "predict_proba"):
-                proba = model.predict_proba(df_input)[0][1]
+                proba = model.predict_proba(df_input)[0]
             else:
-                proba = float(model.predict(df_input)[0])
+                proba = float(model.predict(df_input))
 
             pred = model.predict(df_input)[0]
 
@@ -376,3 +376,4 @@ with tab_doc:
         - Gunakan hasil model sebagai **indikasi risiko**, bukan satu-satunya dasar keputusan.
         """
     )
+
