@@ -7,5 +7,7 @@ xgboost
 imbalanced-learn
 catboost
 seaborn
+scikit-learn==1.6.1
+
 
 
