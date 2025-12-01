@@ -74,7 +74,7 @@ streamlit run app.py
 ``` 
 
 Pastikan file `final_model.sav` berada di direktori yang sama karena file tersebut akan diload oleh aplikasi.
-
+Atau dapat diakses dari link https://seller-churn-analysis-wekmr6jh7z9glbjzixaroc.streamlit.app/
 ---
 
 ## **4. Gambaran Proses Analisis**
@@ -141,3 +141,5 @@ Folder **`SQL Queries`** berisi query yang digunakan untuk:
 
 * Adinda Prilly Cindana
 * Dian Margaretha Nainggolan
+
+
