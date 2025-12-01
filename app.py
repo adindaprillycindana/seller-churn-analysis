@@ -394,7 +394,7 @@ with tab_form:
                                               ['credit_card', 'boleto', 'voucher', 'debit_card'])
             order_status_mode = st.selectbox("order_status_mode", 
                                               ['delivered', 'canceled', 'shipped'])
-            product_category_name_english_mode = st.select_box(
+            product_category_name_english_mode = st.selectbox(
                 "product_category_name_english_mode",
                 ['sports_leisure', 'fashion_bags_accessories', 'furniture_decor',
        'housewares', 'health_beauty', 'auto', 'air_conditioning', 'toys',
@@ -653,4 +653,5 @@ with tab_doc:
         - Gunakan hasil model sebagai **indikasi risiko**, bukan satu-satunya dasar keputusan.
         """
     )
+
 
