@@ -11,7 +11,7 @@ st.set_page_config(
 
 @st.cache_resource
 def load_model():
-    with open("best_model.sav", "rb") as f:
+    with open("model_final.sav", "rb") as f:
         return pickle.load(f)
 
 model = load_model()
@@ -34,7 +34,7 @@ st.sidebar.markdown("---")
 st.sidebar.subheader("Status Model")
 st.sidebar.markdown(
     """
-    - Nama model: `best_model.sav`  
+    - Nama model: `model_final.sav`  
     - Target: Probabilitas seller churn  
     - Output:  
       - Probabilitas churn  
@@ -653,5 +653,6 @@ with tab_doc:
         - Gunakan hasil model sebagai **indikasi risiko**, bukan satu-satunya dasar keputusan.
         """
     )
+
 
 
