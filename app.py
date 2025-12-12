@@ -331,12 +331,12 @@ st.sidebar.markdown(
     berdasarkan perilaku historis dan karakteristik tokonya.
 
     **Definisi churn:**
-    Seller dianggap churn jika **tidak aktif atau tidak menerima pesanan baru selama 90 hari**.
+    Seller dianggap churn jika **tidak aktif atau tidak menerima pesanan baru selama 30 hari**.
 
     **Tips penggunaan:**
     - Isi fitur sesuai rentang nilai di dokumentasi.
     - Pastikan nilai kategorikal cocok dengan data training.
-    - Perhatikan interpretasi probabilitas di bagian hasil (probabilitas churn 90 hari).
+    - Perhatikan interpretasi probabilitas di bagian hasil (probabilitas churn 30 hari).
     """
 )
 
@@ -366,7 +366,7 @@ with header_left:
                 Olist Seller Churn Monitoring
             </h1>
             <p style="color:#7D97E4; margin-top:4px; font-size:0.95rem;">
-                Admin panel untuk memonitor dan mengevaluasi risiko churn seller dalam 90 hari berdasarkan fitur historis.
+                Admin panel untuk memonitor dan mengevaluasi risiko churn seller dalam 30 hari berdasarkan fitur historis.
             </p>
         </div>
         """,
@@ -407,7 +407,7 @@ with tab_form:
     st.markdown(
         """
         Lengkapi data di bawah ini untuk satu seller.  
-        Sistem akan menghitung **probabilitas seller akan churn dalam 90 hari ke depan**  
+        Sistem akan menghitung **probabilitas seller akan churn dalam 30 hari ke depan**  
         dan memberikan status risiko.
         """
     )
@@ -612,7 +612,7 @@ with tab_form:
                             border:1px solid #E05442;
                             font-weight:500;
                         ">
-                            <b>Status:</b> Seller berisiko churn dalam 90 hari
+                            <b>Status:</b> Seller berisiko churn dalam 30 hari
                         </div>
                         """,
                         unsafe_allow_html=True,
@@ -646,7 +646,7 @@ with tab_form:
                         """
                         **Catatan:**
                         - Pertahankan kualitas layanan dan performa seller.
-                        - Seller tetap perlu dimonitor jika terjadi penurunan aktivitas sebelum 90 hari.
+                        - Seller tetap perlu dimonitor jika terjadi penurunan aktivitas sebelum 30 hari.
                         """
                     )
                     st.success("SELLER TIDAK BERISIKO CHURN")
@@ -655,7 +655,7 @@ with tab_form:
                 st.markdown(
                     """
                     Probabilitas di atas menggambarkan peluang bahwa seller akan **churn**  
-                    (tidak aktif atau tidak menerima pesanan baru selama 90 hari).
+                    (tidak aktif atau tidak menerima pesanan baru selama 30 hari).
 
                     - Di bawah 0.30: Risiko churn rendah.  
                     - 0.30 sampai 0.60: Risiko churn sedang.  
@@ -812,7 +812,7 @@ with tab_doc:
         Tujuannya agar admin tahu apakah data seller yang dicek masih berada di kisaran yang wajar.
 
         **Definisi churn yang digunakan model:**
-        - Seller dianggap churn jika tidak aktif atau tidak menerima pesanan baru selama 90 hari.
+        - Seller dianggap churn jika tidak aktif atau tidak menerima pesanan baru selama 30 hari.
         - Semua probabilitas dan label di dashboard merujuk pada risiko churn.
         """
     )
@@ -922,3 +922,4 @@ with tab_doc:
         - Gunakan hasil model sebagai indikasi risiko churn, bukan satu-satunya dasar keputusan.
         """
     )
+
