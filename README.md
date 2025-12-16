@@ -75,9 +75,24 @@ streamlit run app.py
 
 Pastikan file `final_model.sav` berada di direktori yang sama karena file tersebut akan diload oleh aplikasi.
 
-Atau dapat diakses dari link https://seller-churn-analysis-wekmr6jh7z9glbjzixaroc.streamlit.app/
+Atau dapat diakses dari link: https://seller-churn-analysis-wekmr6jh7z9glbjzixaroc.streamlit.app/
 
 ---
+### **C. Dashboard Looker Studio**
+
+Dashboard dapat diakses dari link: https://lookerstudio.google.com/reporting/d28f4561-61ad-4ca1-9c35-c02da11ea7b0
+
+
+#### 📊 Tampilan Dashboard
+
+**1. Seller Churn Overview**
+![Seller Churn Overview](images/dashboard_seller_overview.png)
+
+**2. Geographical Analysis**
+![Product Dashboard](images/dashboard_geographical.png)
+
+**3. Product & Category Analysis**
+![Churn Trend](images/dashboard_products.png)
 
 ## **4. Gambaran Proses Analisis**
 
