@@ -83,7 +83,7 @@ Atau dapat diakses dari link: https://seller-churn-analysis-wekmr6jh7z9glbjzixar
 Dashboard dapat diakses dari link: https://lookerstudio.google.com/reporting/d28f4561-61ad-4ca1-9c35-c02da11ea7b0
 
 
-#### 📊 Tampilan Dashboard
+#### Tampilan Dashboard
 
 **1. Seller Churn Overview**
 ![Seller Churn Overview](images/dashboard_seller_overview.png)
